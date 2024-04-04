@@ -53,7 +53,7 @@ let package = Package(
             dependencies: [
                 "Libavcodec", "Libavfilter", "Libavformat", "Libavutil", "Libswresample", "Libswscale",
                 "Libssl", "Libcrypto", "Libass", "Libfreetype", "Libfribidi", "Libharfbuzz",
-                "MoltenVK", "Libshaderc_combined", "lcms2", "Libplacebo", "Libfontconfig", "Libdovi", "Libunibreak",
+                "MoltenVK", "LibshadercCombined", "lcms2", "Libplacebo", "Libfontconfig", "Libdovi", "Libunibreak",
                 .target(name: "Libdav1d", condition: .when(platforms: [.macOS, .iOS, .tvOS])),
 //                "Libsrt",
             ],
@@ -86,8 +86,8 @@ let package = Package(
             path: "Sources/MoltenVK.xcframework"
         ),
         .binaryTarget(
-            name: "Libshaderc_combined",
-            path: "Sources/Libshaderc_combined.xcframework"
+            name: "LibshadercCombined",
+            path: "Sources/LibshadercCombined.xcframework"
         ),
         .binaryTarget(
             name: "lcms2",

@@ -1,0 +1,4 @@
+framework module LibshadercCombined [system] {
+    umbrella "."
+    export *
+}
